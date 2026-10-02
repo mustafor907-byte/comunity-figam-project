@@ -1,1 +1,0 @@
-# comunity-figam-project
