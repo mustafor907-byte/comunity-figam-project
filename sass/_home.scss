@@ -1,0 +1,64 @@
+$color_1: #555;
+$color_2: #17a2b8;
+$color_3: #138496;
+$color_4: #ffffff;
+$font-family_1: Arial, sans-serif;
+$background-color_1: #f0f0f0;
+$background-color_2: #e6f6f8;
+$background-color_3: #17a2b8;
+$background-color_4: #138496;
+
+body {
+	margin: 0;
+	font-family: $font-family_1;
+	background-color: $background-color_1;
+	line-height: 1.5;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.header {
+	background-color: $background-color_2;
+	padding: 15px;
+	border-radius: 5px;
+	text-align: center;
+	h1 {
+		margin: 0 0 5px;
+	}
+}
+.footer {
+	background-color: $background-color_2;
+	padding: 15px;
+	border-radius: 5px;
+	text-align: center;
+	p {
+		margin: 0;
+		font-size: 14px;
+		color: $color_1;
+	}
+}
+.content {
+	margin: 20px 0;
+	p {
+		margin-bottom: 10px;
+	}
+}
+a {
+	color: $color_2;
+	text-decoration: none;
+	&:hover {
+		color: $color_3;
+	}
+}
+.btn-info {
+	display: inline-block;
+	background-color: $background-color_3;
+	color: $color_4;
+	padding: 8px 15px;
+	border-radius: 5px;
+	&:hover {
+		background-color: $background-color_4;
+	}
+}
