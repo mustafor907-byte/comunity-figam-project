@@ -62,3 +62,261 @@ a {
 		background-color: $background-color_4;
 	}
 }
+* { box-sizing: border-box; }
+
+.dishes {
+  padding: 40px 20px;
+}
+
+.dishes .dishes-title {
+  color: #d6264a;
+  font-size: 32px;
+  margin: 0 0 20px;
+}
+
+/* kartalar bitta qatorda */
+.dishes .dishes-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.dishes .card {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dishes .card img {
+  display: block;
+  width: 100%;
+  height: 110px;
+  object-fit: contain;
+}
+
+.dishes .card-name {
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.dishes .card-stars {
+  color: gold;
+}
+
+.dishes .card-price {
+  color: #d6264a;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .dishes .dishes-box { gap: 10px; }
+  .dishes .card { padding: 12px 8px; }
+  .dishes .card img { height: 70px; }
+  .dishes .card-name { font-size: 11px; }
+  .dishes .card-price { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .dishes { padding: 30px 12px; }
+}
+* { box-sizing: border-box; }
+
+.dishes {
+  padding: 40px 20px;
+}
+
+.dishes .dishes-title {
+  color: #d6264a;
+  font-size: 32px;
+  margin: 0 0 20px;
+}
+
+/* kartalar bitta qatorda */
+.dishes .dishes-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.dishes .card {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dishes .card img {
+  display: block;
+  width: 100%;
+  height: 110px;
+  object-fit: contain;
+}
+
+.dishes .card-name {
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.dishes .card-stars {
+  color: gold;
+}
+
+.dishes .card-price {
+  color: #d6264a;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .dishes .dishes-box { gap: 10px; }
+  .dishes .card { padding: 12px 8px; }
+  .dishes .card img { height: 70px; }
+  .dishes .card-name { font-size: 11px; }
+  .dishes .card-price { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .dishes { padding: 30px 12px; }
+  .dishes .dishes-title { font-size: 24px; }
+  .dishes .dishes-box { overflow-x: auto; }
+  .dishes .card { flex: 0 0 130px; }
+}
+$red: #d6264a;
+$menu-red: #bb2339;
+$line: #e6e6e6;
+
+* {
+  box-sizing: border-box;
+}
+
+/* ========== Popular Dishes ========== */
+.dishes {
+  padding: 40px 20px;
+
+  .dishes-title {
+    margin: 0 0 20px;
+    font-size: 32px;
+    color: $red;
+  }
+
+  .dishes-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  .card {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    img {
+      display: block;
+      width: 100%;
+      height: 110px;
+      object-fit: contain;
+    }
+  }
+
+  .card-name {
+    font-size: 13px;
+    word-break: break-word;
+  }
+
+  .card-stars {
+    color: gold;
+  }
+
+  .card-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: $red;
+  }
+}
+
+/* ========== Our Regular Menu Pack ========== */
+.menu {
+  padding: 40px 20px;
+
+  .menu-title {
+    margin: 0 0 20px;
+    font-size: 32px;
+    color: $menu-red;
+  }
+
+  .menu-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+@media (max-width: 300px) {
+    .header {
+        width: 95%;
+        flex-direction: column;
+        gap: 10px;
+
+        nav {
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            a {
+                font-size: 11px;
+            }
+        }
+
+        .order-btn {
+            font-size: 11px;
+            padding: 7px 12px;
+        }
+    }
+
+    .menu {
+        width: 95%;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        .buttons {
+            flex-wrap: wrap;
+
+            button {
+                font-size: 9px;
+                padding: 5px 8px;
+            }
+        }
+
+        .cards {
+            grid-template-columns: 1fr;
+        }
+
+        .card {
+            width: 100%;
+        }
+    }
+}
